@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="task1.Controller">
+   <children>
+      <TextField fx:id="inputfile" layoutX="50.0" layoutY="44.0" prefHeight="26.0" prefWidth="200.0" />
+      <TextField fx:id="outputfile" layoutX="346.0" layoutY="45.0" onAction="#handleWriteFileAction" prefHeight="26.0" prefWidth="193.0" />
+      <Button fx:id="readbtn" layoutX="93.0" layoutY="91.0" mnemonicParsing="false" onAction="#handleReadFileAction" prefHeight="36.0" prefWidth="136.0" text="Read file" />
+      <Button fx:id="writebtn" layoutX="391.0" layoutY="91.0" mnemonicParsing="false" onAction="#handleWriteFileAction" prefHeight="36.0" prefWidth="104.0" text="write to file" />
+      <TextArea fx:id="logarea" layoutX="51.0" layoutY="251.0" prefHeight="126.0" prefWidth="491.0" />
+      <Label layoutX="50.0" layoutY="22.0" text="write input file name" />
+      <Label layoutX="346.0" layoutY="22.0" text="write output file name" />
+      <Label layoutX="50.0" layoutY="235.0" text="Result" />
+      <Button fx:id="processbtn" layoutX="93.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleProcessNumbers" prefHeight="26.0" prefWidth="136.0" text="Process data" />
+      <Label layoutX="261.0" layoutY="199.0" prefHeight="26.0" prefWidth="75.0" text="Status:" />
+      <Label fx:id="statusLabel" layoutX="325.0" layoutY="195.0" prefHeight="36.0" prefWidth="207.0" text="None" textFill="RED" />
+      <Button fx:id="preparebtn" layoutX="93.0" layoutY="143.0" mnemonicParsing="false" onAction="#handlePrepareFileAction" prefHeight="26.0" prefWidth="136.0" text="Prepare file" />
+   </children>
+</AnchorPane>

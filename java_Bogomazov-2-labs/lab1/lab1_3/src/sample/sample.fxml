@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="420.0" prefWidth="312.0">
+         <children>
+            <Button fx:id="generate" layoutX="215.0" layoutY="66.0" mnemonicParsing="false" text="Generate" />
+            <TextField fx:id="length" layoutX="215.0" layoutY="33.0" prefHeight="25.0" prefWidth="79.0" />
+            <Label fx:id="arr" layoutX="14.0" layoutY="138.0" />
+            <Label fx:id="lblSum" layoutX="14.0" layoutY="105.0" />
+            <Label fx:id="min" layoutX="14.0" layoutY="71.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
